@@ -57,13 +57,13 @@ procedure TFrmMain.miconnect_oldClick(Sender: TObject);
 begin
     if cp.Connected then
     begin
-    miconnect.Caption:='З''єднатись';
+    miconnect.Caption:='Р—''С”РґРЅР°С‚РёСЃСЊ';
     AQuery.Active:=false;
     cp.Close
     end else begin
     cp.Open;
     AQuery.Active:=true;
-    miconnect.Caption:='Відєднатись';
+    miconnect.Caption:='Р’С–РґС”РґРЅР°С‚РёСЃСЊ';
     end;
 end;
 
@@ -103,7 +103,7 @@ for i:=1 to Count do
 begin
   tstr:=tstr+s[i];
   if(s[i]=Char(LFbyte)) then begin
-    lblweight.Caption:= 'Вага: '+cweight(tstr);
+    lblweight.Caption:= 'Р’Р°РіР°: '+cweight(tstr);
     weight:=tstr;
     tstr:='';
   end;
@@ -127,10 +127,10 @@ begin
         ds.DataSet.FieldByName('type').AsString:='Brutto';
       end;
       ds.DataSet.Refresh;
-      ShowMessage('Данні внесено');
+      ShowMessage('Р”Р°РЅРЅС– РІРЅРµСЃРµРЅРѕ');
     end;
-  end;// else begin ShowMessage('Введіть назву предмету  ');end;
-end;// else begin ShowMessage('Виконайте з''єднання з терезами!');end;
+  end;// else begin ShowMessage('Р’РІРµРґС–С‚СЊ РЅР°Р·РІСѓ РїСЂРµРґРјРµС‚Сѓ  ');end;
+end;// else begin ShowMessage('Р’РёРєРѕРЅР°Р№С‚Рµ Р·''С”РґРЅР°РЅРЅСЏ Р· С‚РµСЂРµР·Р°РјРё!');end;
 end;
 
 procedure TFrmMain.tiAboutClick(Sender: TObject);
