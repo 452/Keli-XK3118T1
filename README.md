@@ -1,5 +1,5 @@
 # Keli XK3118T1
-Program for scales Keli XK3118T1
+Program for scales Keli XK3118T1 (this is my old Delphi project 2010, but people every time ask me about binary, I found sources code and push to github =) )
 
 Программное обеспечение для електронных весов Keli XK3118T1:
 
